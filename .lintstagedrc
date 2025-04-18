@@ -1,0 +1,6 @@
+{
+    "**/*.{js,json}": [
+        "echo 'Linting and fixing'",
+        "prettier --write --ignore-unknown"
+    ]
+}
