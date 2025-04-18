@@ -35,11 +35,8 @@ At UnitedHealth Group, our mission is to help people live healthier lives and ma
 
 const COOKIE_OPTIONS = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production",
-  domain:
-    process.env.NODE_ENV === "production"
-      ? process.env.PROD_DOMAIN
-      : "localhost",
+  secure: true,
+  sameSite: "None",
 };
 
 const CROSS_ORIGIN_LIST = process.env.ALLOWED_ORIGIN.split(",");
